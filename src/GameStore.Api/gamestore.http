@@ -1,0 +1,35 @@
+GET http://localhost:5259/games
+
+###
+GET http://localhost:5259/games/863FAC99-2D23-473F-9769-DC7D8051D654
+
+###
+POST http://localhost:5259/games
+Content-Type: application/json
+
+{
+    "name": "test name2",
+    "genreId": "26AB129F-4692-400A-B4DD-A8CD866404EE",
+    "price": 10.0,
+    "releaseDate": "2021-01-01",
+    "description": "test desc"
+}
+
+###
+PUT http://localhost:5259/games/863FAC99-2D23-473F-9769-DC7D8051D654
+Content-Type: application/json
+
+{
+    "name": "change",
+    "genreId": "26AB129F-4692-400A-B4DD-A8CD866404EE",
+    "price": 10.0,
+    "releaseDate": "2021-01-01",
+    "description": "test desc"
+}
+
+
+###
+DELETE  http://localhost:5259/games/863fac99-2d23-473f-9769-dc7d8051d654
+
+###
+GET http://localhost:5259/genres/
